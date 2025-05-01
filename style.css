@@ -1,6 +1,9 @@
 html, body {
   color:black;
-  
+}
+
+.gray{
+  filter: grayscale(95%);
 }
 
 details {
@@ -38,3 +41,6 @@ button {
 .size4{
   height:110px;
 }
+
+
+
