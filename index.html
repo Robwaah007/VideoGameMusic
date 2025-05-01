@@ -5,15 +5,58 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <p id="info">
-        update the longitude and latitude coordinates in the JavaScript code to match your exact location...
-      </p>
-    <audio id="soundy" src="https://cdn.glitch.global/5a1de797-b0c3-4c78-a06b-c9254bc97c34/gateOpening.mp3?v=1680968913536"></audio>
-    <div>
-     <button onclick="checkLocation()">
-       start walk
-      </button>
-      
-    </div> 
+    <div id = "Icons">
+      <div id = "FirstRow">
+        <img src="Pac-Man.png" class=size onclick="playPacMan()">
+            <audio src="01. PAC-MAN.mp3" id="PacMan" loop="true"></audio>
+        <img src="8-Bit Mario.png" class=size onclick="playMario()">
+            <audio src="1-01. Ground BGM - Super Mario Bros..mp3" id="Mario" loop="true"></audio>
+        <img src="Link.png" class=size onclick="playZelda()">
+            <audio src="02 Overworld BGM.mp3" id="Zelda" loop="true"></audio>
+        <img src="Mega Man.png" class = size onclick="playMegaMan()">
+            <audio src="08 Elecman Stage.mp3" id="MegaMan" loop="true"></audio>
+        <img src="Tetrimino.png" class="size" onclick="playTetris()">
+            <audio src="03. A-Type Music (Korobeiniki).mp3" id="Tetris" loop="true"></audio>
+      </div>
+
+      <div id = "SecondRow">
+        <img src="GenesisSonic.png" class=size onclick="playSonic()">
+            <audio src="01 Green Hill Zone Act 1.mp3" id="Sonic" loop="true"></audio>
+        <img src="Pikachu.png" class=size onclick="playPokemon()">
+            <audio src="10. Battle! (Trainer Battle).mp3" id="Pokemon" loop="true"></audio>
+        <img src="Crash.png" class="size4" onclick="playCrash()">
+            <audio src="01. N. Sanity Beach.mp3" id="Crash" loop="true"></audio>
+        <img src="PS1 Klonoa.png" class=size2 onclick="playKlonoa()">
+            <audio src="1-04. The Windmill Song.mp3" id="Klonoa" loop="true"></audio>
+        <img src="BanjoKazooie.png" class="size" onclick="playBanjoKazooie()">
+            <audio src="1-03. Banjo-Kazooie ~Main Titles~.mp3" id="BanjoKazooie" loop="true"></audio>
+      </div>
+
+      <div id = "ThirdRow">
+        <img src="Peashooter.png" class=size3 onclick="playPvZ()">
+            <audio src="04. Grasswalk.mp3" id="PvZ" loop="true"></audio>
+        <img src="Rabbid Duo 2D.PNG" class=size onclick="playRabbids()">
+            <audio src="07. Bubamara.mp3" id="Rabbids" loop="true"></audio>
+        <img src="Red AngryBirds1.png" class=size3 onclick="playAngryBirds()">
+            <audio src="25. Main Theme.mp3" id="AngryBirds" loop="true"></audio>
+        <img src="Meat Boy - Super Meat Boy.png" class=size3 onclick="playMeatBoy()">
+            <audio src="03 Forest Funk (Ch 1 Light World).mp3" id="MeatBoy" loop="true"></audio>
+        <img src="OriginsRayman1.png" class=size4 onclick="playRayman()">
+            <audio src="09. The Darktoon Chase ~Jibberish Jungle~.mp3" id="Rayman" loop="true"></audio>            
+      </div>
+
+      <div id = "FourthRow">
+        <img src="SteveMinecraft.png" class=size2 onclick="playMinecraft()">
+            <audio src="08. Minecraft.mp3" id="Minecraft" loop="true"></audio>
+        <img src="Shovel Knight.png" class=size onclick="playShovelKnight()">
+            <audio src="04. Strike the Earth! (Plains of Passage).mp3" id="ShovelKnight" loop="true"></audio>
+        <img src="Lilac.png" class="size2" onclick="playFreedomPlanet()">
+            <audio src="04. Dragon Valley 1.mp3" id="FreedomPlanet" loop="true"></audio>
+        <img src="Freddy4.png" class="size" onclick="playFNAF()">
+            <audio src="FNAF Music Box.mp3" id="FNAF" loop="true"></audio>
+        <img src="Shantae.png" class=size4 onclick="playShantae()">
+            <audio src="06 Neo Burning Town.mp3" id="Shantae" loop="true"></audio>
+      </div>
+    </div>
   </body>
 </html>

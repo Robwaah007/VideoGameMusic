@@ -1,69 +1,200 @@
 //old context stuff nothing new here
-let context;
-let button;
-let playing = false;
-let soundy;
-let infoField;
-
-window.onload = (event) => {
-  soundy = document.querySelector("#soundy");
-  console.log(soundy);
-  infoField = document.querySelector("#info");
-};
-
-
-//set this to your desired address
-let tommyLat = 40.693368073976764;
-let tommyLong =-73.98795830821966;
-
-//eltons
-let eltonsLat = 40.69272122881661;
-let eltonsLong = -73.98702333530535;
-
-
-function checkLocation () {
-  if ( 'geolocation' in navigator) {
-  console.log(navigator);
-  console.log ( 'geolocation available');
-  console.log(navigator.geolocation.getCurrentPosition);
-    
-    //navigator geolocation getcurrentposition takes a callback function as an argument (provides coords when they are available )
-  navigator.geolocation.getCurrentPosition(function(e) {
-    console.log(e);
-    renderLoc(e.coords.latitude, e.coords.longitude);
+function playPacMan(){
+  let sound = document.getElementById("PacMan");
+  if (sound.paused) {
+    sound.play();
   }
-                                          
-  );
-
-  } else {
-  console.log ('geolocation not available');
+  else {
+    sound.pause();
   }
-
-  function renderLoc (lat, lon) {
-    if (Math.abs(lat - tommyLat) < .001 && Math.abs(lon - tommyLong) < .001 ) {
-      console.log('youre there');
-      infoField.innerHTML = "you're there 🌎"
-      soundy.play();
-    }
-    else {
-      console.log('nope not there');
-      infoField.innerHTML = "nope not there 👎🏼"
-    }
-    
-    //second site
-    
-    if (Math.abs(lat - eltonsLat) < .001 && Math.abs(lon - eltonsLong) < .001 ) {
-      console.log('youre there');
-      infoField.innerHTML = "you're there 🌎"
-      soundy.play();
-    }
-    else if (Math.abs(lat - eltonsLat) < .001 && Math.abs(lon - tommyLong)) {
-             
-             
-      console.log('nope not there');
-      infoField.innerHTML = "nope not there 👎🏼"
-    }
-  }
-
 }
 
+function playMario(){
+  let sound = document.getElementById("Mario");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playZelda(){
+  let sound = document.getElementById("Zelda");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playMegaMan(){
+  let sound = document.getElementById("MegaMan");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playTetris(){
+  let sound = document.getElementById("Tetris");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playSonic(){
+  let sound = document.getElementById("Sonic");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playPokemon(){
+  let sound = document.getElementById("Pokemon");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playCrash(){
+  let sound = document.getElementById("Crash");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playKlonoa(){
+  let sound = document.getElementById("Klonoa");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playBanjoKazooie(){
+  let sound = document.getElementById("BanjoKazooie");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playPvZ(){
+  let sound = document.getElementById("PvZ");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playRabbids(){
+  let sound = document.getElementById("Rabbids");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playAngryBirds(){
+  let sound = document.getElementById("AngryBirds");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playMeatBoy(){
+  let sound = document.getElementById("MeatBoy");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playRayman(){
+  let sound = document.getElementById("Rayman");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playMinecraft(){
+  let sound = document.getElementById("Minecraft");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playShovelKnight(){
+  let sound = document.getElementById("ShovelKnight");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playFreedomPlanet(){
+  let sound = document.getElementById("FreedomPlanet");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playFNAF(){
+  let sound = document.getElementById("FNAF");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
+
+function playShantae(){
+  let sound = document.getElementById("Shantae");
+  if (sound.paused) {
+    sound.play();
+  }
+  else {
+    sound.pause();
+  }
+}
